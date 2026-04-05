@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "ktisuneciv:item/kitsune_spawn_egg"
+    }
+}
