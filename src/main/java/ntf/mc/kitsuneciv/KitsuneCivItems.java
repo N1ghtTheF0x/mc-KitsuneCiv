@@ -20,6 +20,8 @@ public class KitsuneCivItems {
 
         Registry.register(BuiltInRegistries.ITEM, key, item);
 
+        KitsuneCiv.LOGGER.info("registered " + item.getDescriptionId());
+
         return item;
     }
     public static final SpawnEggItem KITSUNE_SPAWN_EGG = register(

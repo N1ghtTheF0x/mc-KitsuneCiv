@@ -14,7 +14,9 @@ public class KitsuneCivEntities {
     private static <T extends Entity> EntityType<T> register(String name,EntityType.Builder<T> builder)
     {
         ResourceKey<EntityType<?>> key = ResourceKey.create(Registries.ENTITY_TYPE, KitsuneCiv.id(name));
-        return Registry.register(BuiltInRegistries.ENTITY_TYPE, key, builder.build(key));
+        EntityType<T> entityType = Registry.register(BuiltInRegistries.ENTITY_TYPE, key, builder.build(key));
+        KitsuneCiv.LOGGER.info("registered " + entityType.getDescriptionId());
+        return entityType;
     }
     public static final EntityType<KitsuneEntity> KITSUNE = register("kitsune",
         EntityType.Builder.<KitsuneEntity>of(KitsuneEntity::new,MobCategory.MISC)
