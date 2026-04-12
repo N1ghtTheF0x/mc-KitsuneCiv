@@ -41,11 +41,11 @@ public class KitsuneEntityModel extends EntityModel<KitsuneEntityRenderState> {
 		.texOffs(18, 12).addBox(-1.5F, 3.5F, -1.5F, 3.0F, 8.0F, 3.0F, new CubeDeformation(-0.2F))
 		.texOffs(36, 0).addBox(-1.5F, 11.0F, -2.5F, 3.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(1.5F, 0.0F, 0.0F));
 
-		PartDefinition left_arm = body.addOrReplaceChild("left_arm", CubeListBuilder.create().texOffs(24, 0).addBox(-0.8F, -0.9F, -1.5F, 3.0F, 7.0F, 3.0F, new CubeDeformation(-0.3F))
-		.texOffs(0, 27).addBox(-0.8F, 5.3F, -1.5F, 3.0F, 7.0F, 3.0F, new CubeDeformation(-0.5F)), PartPose.offset(3.5F, -11.4F, 0.0F));
+		PartDefinition left_arm = body.addOrReplaceChild("left_arm", CubeListBuilder.create().texOffs(24, 0).addBox(-0.8F, -1.6F, -1.5F, 3.0F, 7.0F, 3.0F, new CubeDeformation(-0.3F))
+		.texOffs(0, 27).addBox(-0.8F, 4.6F, -1.5F, 3.0F, 7.0F, 3.0F, new CubeDeformation(-0.5F)), PartPose.offset(3.5F, -10.7F, 0.0F));
 
-		PartDefinition right_arm = body.addOrReplaceChild("right_arm", CubeListBuilder.create().texOffs(30, 10).addBox(-2.2F, -0.9F, -1.5F, 3.0F, 7.0F, 3.0F, new CubeDeformation(-0.3F))
-		.texOffs(30, 20).addBox(-2.2F, 5.3F, -1.5F, 3.0F, 7.0F, 3.0F, new CubeDeformation(-0.5F)), PartPose.offset(-3.5F, -11.4F, 0.0F));
+		PartDefinition right_arm = body.addOrReplaceChild("right_arm", CubeListBuilder.create().texOffs(30, 10).addBox(-2.2F, -1.6F, -1.5F, 3.0F, 7.0F, 3.0F, new CubeDeformation(-0.3F))
+		.texOffs(30, 20).addBox(-2.2F, 4.6F, -1.5F, 3.0F, 7.0F, 3.0F, new CubeDeformation(-0.5F)), PartPose.offset(-3.5F, -10.7F, 0.0F));
 
 		PartDefinition right_leg = body.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(12, 34).addBox(-1.5F, -1.5F, -1.5F, 3.0F, 6.0F, 3.0F, new CubeDeformation(0.1F))
 		.texOffs(18, 23).addBox(-1.5F, 3.5F, -1.5F, 3.0F, 8.0F, 3.0F, new CubeDeformation(-0.2F))
